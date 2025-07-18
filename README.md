@@ -90,17 +90,16 @@ Des millions de personnes dans le monde souffrent de dépression, d'anxiété et
 2. **Démarrer le backend (Port : 3001)**
    ```sh
    cd backend
-   $env:PORT=3001; npm run dev
+    npm run dev
    ```
    or
    ```bash
          cd backend
-         PORT=3001 npm run dev
+         npm run dev
    ```
          or
    ```cmd
          cd backend
-         set PORT=3001
          npm run dev
 
    ```
@@ -308,4 +307,4 @@ Page d'accueil                 |                   Reponse ChatBot
 <img src="Screenshots/Capture1.PNG" height="200">  | <img src="Screenshots/Capture.PNG" height="200">
 
 
-> "Si vous ou quelqu'un que vous connaissez éprouvez des difficultés, veuillez contacter un professionnel de la santé mentale ou une ligne d'écoute de votre pays. S.E.R.E.N.A. ne remplace pas une aide professionnelle.
+> "Si vous ou quelqu'un que vous connaissez éprouvez des difficultés, veuillez contacter un professionnel de la santé mentale ou une ligne d'écoute de votre pays. LUNA. ne remplace pas une aide professionnelle.

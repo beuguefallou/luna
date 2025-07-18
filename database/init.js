@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 
-const dbPath = path.join(__dirname, 'luna.sqlite');
+const dbPath = path.join(__dirname, 'serena.sqlite');
 const schemaPath = path.join(__dirname, 'schema.sql');
 
 const db = new sqlite3.Database(dbPath);

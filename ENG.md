@@ -1,4 +1,4 @@
-# S.E.R.E.N.A. - Mental Health Chatbot
+# LUNA. - Mental Health Chatbot
 
 **Supporting Empathy, Reassurance, and Emotional Nurturing Assistant**
 
@@ -6,7 +6,7 @@
 
 ## 🧠 Problem Statement
 
-Millions of people worldwide struggle with depression, anxiety, and loneliness. Many have no one to talk to, and the lack of support can lead to devastating outcomes. S.E.R.E.N.A. aims to provide a safe, anonymous, and supportive space for anyone to share their thoughts and receive empathetic, motivational responses—24/7.
+Millions of people worldwide struggle with depression, anxiety, and loneliness. Many have no one to talk to, and the lack of support can lead to devastating outcomes. LUNA. aims to provide a safe, anonymous, and supportive space for anyone to share their thoughts and receive empathetic, motivational responses—24/7.
 
 ---
 
@@ -50,8 +50,8 @@ Millions of people worldwide struggle with depression, anxiety, and loneliness. 
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/YOUR_USERNAME/S.E.R.E.N.A.-Mental-Health-Chatbot.git
-   cd S.E.R.E.N.A.-Mental-Health-Chatbot
+   git clone https://github.com/YOUR_USERNAME/LUNA.-Mental-Health-Chatbot.git
+   cd LUNA.-Mental-Health-Chatbot
    ```
 
 2. **Install dependencies:**
@@ -172,4 +172,4 @@ MIT
 
 ---
 
-> If you or someone you know is struggling, please reach out to a mental health professional or helpline in your country. S.E.R.E.N.A. is not a substitute for professional help.
+> If you or someone you know is struggling, please reach out to a mental health professional or helpline in your country. LUNA. is not a substitute for professional help.

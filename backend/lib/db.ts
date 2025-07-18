@@ -7,7 +7,7 @@ let db: Database | null = null;
 export async function getDb() {
   if (!db) {
     db = await open({
-      filename: path.join(process.cwd(), '../database/luna.sqlite'),
+      filename: path.join(process.cwd(), '../database/serena.sqlite'),
       driver: sqlite3.Database,
     });
   }

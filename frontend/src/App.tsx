@@ -75,10 +75,10 @@ const ChatArea = ({ messages, onSend, input, setInput, suggestions, onSuggestion
         {/* Header with logo, date, and developer info */}
         <div className="flex flex-col items-center sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6 sticky top-0 bg-gradient-to-b from-[#f5f6fa] to-transparent pb-4 z-10">
           <h1 className="text-2xl sm:text-3xl font-extrabold text-accent text-center">
-            S.E.R.E.N.A
+            LUNA
           </h1>
           <div className="flex flex-col items-center sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <span className="text-xs sm:text-sm text-gray-600 text-center">Developed with ❤️ by <span className="font-bold">Mouhamadou Fadilou Diop</span></span>
+            <span className="text-xs sm:text-sm text-gray-600 text-center">Developed with ❤️ by <span className="font-bold">Rohan Vanmali</span></span>
             <div className="flex gap-2">
               <a href="https://www.linkedin.com/in/vanmalirohan20/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-calmBlue transition">
                 <FaLinkedin size={16} className="sm:w-5 sm:h-5" />
@@ -127,7 +127,7 @@ const ChatArea = ({ messages, onSend, input, setInput, suggestions, onSuggestion
           )}
           {messages.length === 0 && !loading && (
             <div className="flex flex-col items-center justify-center h-full">
-              <div className="text-2xl sm:text-3xl font-extrabold text-accent mb-2 drop-shadow text-center">Welcome to S.E.R.E.N.A <span>💬🤗🌱</span></div>
+              <div className="text-2xl sm:text-3xl font-extrabold text-accent mb-2 drop-shadow text-center">Welcome to LUNA <span>💬🤗🌱</span></div>
               <div className="text-sm sm:text-lg text-calmPurple font-medium bg-calmGray/80 px-4 sm:px-6 py-2 sm:py-3 rounded-2xl shadow mt-2 text-center">To start chatting, type something in the text box below. <span>👇✨</span></div>
             </div>
           )}
@@ -162,7 +162,7 @@ const ChatArea = ({ messages, onSend, input, setInput, suggestions, onSuggestion
 };
 
 function App() {
-  const [sessionId, setSessionId] = useState<string | null>(localStorage.getItem('luna_sessionId'));
+  const [sessionId, setSessionId] = useState<string | null>(localStorage.getItem('serena_sessionId'));
   const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth >= 1024);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -182,20 +182,20 @@ function App() {
   // On mount, restore sessionId
   useEffect(() => {
     if (sessionId) {
-      localStorage.setItem('luna_sessionId', sessionId);
+      localStorage.setItem('serena_sessionId', sessionId);
     }
   }, [sessionId]);
 
   // Persist chatId to localStorage
   useEffect(() => {
     if (sessionId) {
-      localStorage.setItem('luna_sessionId', sessionId);
+      localStorage.setItem('serena_sessionId', sessionId);
     }
   }, [sessionId]);
 
   // Restore chatId and fetch chat history on mount (after sessionId is set)
   useEffect(() => {
-    const storedChatId = localStorage.getItem('luna_chatId');
+    const storedChatId = localStorage.getItem('serena_chatId');
     if (storedChatId && sessionId) {
       setSuggestions([]); // Clear suggestions before fetching new ones
       axios.get('http://localhost:3001/api/chat', {
@@ -247,7 +247,7 @@ function App() {
   const handleNewChat = async () => {
     setMessages([]);
     setSuggestions([]);
-    localStorage.removeItem('luna_chatId');
+    localStorage.removeItem('serena_chatId');
     // Create a new chat and fetch its suggestions
     if (sessionId) {
       const res = await axios.post('http://localhost:3001/api/chat', {

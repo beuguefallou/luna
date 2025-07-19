@@ -1,20 +1,22 @@
-# Luna (apaisement, comme la lune) - Chatbot pour la santé mentale
-
-**Assistant de soutien à l'empathie, au réconfort et au soutien émotionnel**
-
----
+# Google AI Hackathon - Abidjan 2025
+##  Luna (apaisement, comme la lune) - Chatbot pour la santé mentale
+Assistant de soutien à l'empathie, au réconfort et au soutien émotionnel
 
 ## 🧠 Énoncé du problème
+Lors des élections présidentielles du Sénégal en 2024, plus de 2000 personnes ont été détenues dans un contexte fortement marqué par des tensions politiques, de l'incertitude et des divisions sociales. Ce climat a profondément affecté la santé mentale de nombreuses personnes, qu’elles soient directement concernées par les détentions ou témoins de ces événements.
 
-Des millions de personnes dans le monde souffrent de dépression, d'anxiété et de solitude. Nombre d'entre elles n'ont personne à qui parler, et le manque de soutien peut avoir des conséquences désastreuses. luna vise à offrir un espace sûr, anonyme et bienveillant où chacun peut partager ses pensées et recevoir des réponses empathiques et motivantes, 24h/24 et 7j/7.
+Plus largement, des millions de personnes dans le monde souffrent également de dépression, d'anxiété et de solitude. Beaucoup n’ont personne à qui parler, et l’absence de soutien psychologique peut entraîner des conséquences graves, voire irréversibles.
 
----
+Luna vise à répondre à cette urgence en offrant un espace sûr, anonyme et bienveillant où chacun peut exprimer ses pensées et recevoir des réponses empathiques, motivantes et sans jugement, 24h/24 et 7j/7.
 
 ## 💡 Motivation et objectif
+Réponse à une crise réelle : L'idée de Luna est née en constatant l’impact psychologique des détentions massives liées aux élections de 2024 au Sénégal. Une crise silencieuse qui a mis en lumière l’urgence d’outils de soutien accessibles à tous.
 
-- **Empathie à grande échelle** : rendre le soutien en matière de santé mentale accessible à tous, à tout moment.
-- **Confidentialité avant tout** : pas de comptes, pas de suivi, totalement anonyme.
-- **Impact positif** : Encouragez, motivez et soutenez les utilisateurs de manière douce et sans jugement.
+- **Empathie à grande échelle** : Offrir un accès universel au soutien en matière de santé mentale, en particulier dans les contextes de crise politique ou sociale.
+
+- **Confidentialité avant tout** : Aucun compte requis, aucun suivi. L’utilisateur reste totalement anonyme.
+
+- **Impact positif durable** : Encourager, apaiser et accompagner les utilisateurs avec douceur, respect et humanité.
 
 ---
 

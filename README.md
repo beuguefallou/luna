@@ -2,6 +2,8 @@
 ##  Luna (soothing, like the moon) - Mental Health Chatbot  
 Assistant for empathy, comfort, and emotional support
 
+# [Watch the video](https://youtu.be/WJsLn_B0daE)
+
 ## 🧠 Problem Statement  
 During the 2024 presidential elections in Senegal, more than 2000 people were detained in a climate marked by intense political tensions, uncertainty, and social divisions. This atmosphere profoundly affected the mental health of many individuals — both those directly impacted and those witnessing the events.
 

@@ -1,207 +1,135 @@
 # Google AI Hackathon - Abidjan 2025
-##  Luna (apaisement, comme la lune) - Chatbot pour la santé mentale
-Assistant de soutien à l'empathie, au réconfort et au soutien émotionnel
+##  Luna (soothing, like the moon) - Mental Health Chatbot  
+Assistant for empathy, comfort, and emotional support
 
-## 🧠 Énoncé du problème
-Lors des élections présidentielles du Sénégal en 2024, plus de 2000 personnes ont été détenues dans un contexte fortement marqué par des tensions politiques, de l'incertitude et des divisions sociales. Ce climat a profondément affecté la santé mentale de nombreuses personnes, qu’elles soient directement concernées par les détentions ou témoins de ces événements.
+## 🧠 Problem Statement  
+During the 2024 presidential elections in Senegal, more than 2000 people were detained in a climate marked by intense political tensions, uncertainty, and social divisions. This atmosphere profoundly affected the mental health of many individuals — both those directly impacted and those witnessing the events.
 
-Plus largement, des millions de personnes dans le monde souffrent également de dépression, d'anxiété et de solitude. Beaucoup n’ont personne à qui parler, et l’absence de soutien psychologique peut entraîner des conséquences graves, voire irréversibles.
+More broadly, millions of people around the world also suffer from depression, anxiety, and loneliness. Many have no one to talk to, and the lack of psychological support can lead to severe, even irreversible, consequences.
 
-Luna vise à répondre à cette urgence en offrant un espace sûr, anonyme et bienveillant où chacun peut exprimer ses pensées et recevoir des réponses empathiques, motivantes et sans jugement, 24h/24 et 7j/7.
+Luna aims to address this urgent need by offering a safe, anonymous, and compassionate space where anyone can share their thoughts and receive empathetic, motivating, and non-judgmental responses — available 24/7.
 
-## 💡 Motivation et objectif
-Réponse à une crise réelle : L'idée de Luna est née en constatant l’impact psychologique des détentions massives liées aux élections de 2024 au Sénégal. Une crise silencieuse qui a mis en lumière l’urgence d’outils de soutien accessibles à tous.
+## 💡 Motivation and Purpose  
+Response to a real crisis: The idea for Luna was born from witnessing the psychological toll of the mass detentions related to the 2024 elections in Senegal — a silent crisis that highlighted the urgent need for accessible mental health tools.
 
-- **Empathie à grande échelle** : Offrir un accès universel au soutien en matière de santé mentale, en particulier dans les contextes de crise politique ou sociale.
-
-- **Confidentialité avant tout** : Aucun compte requis, aucun suivi. L’utilisateur reste totalement anonyme.
-
-- **Impact positif durable** : Encourager, apaiser et accompagner les utilisateurs avec douceur, respect et humanité.
+- **Empathy at scale**: Provide universal access to mental health support, especially in contexts of political or social crisis.  
+- **Privacy first**: No accounts required, no tracking. The user remains completely anonymous.  
+- **Lasting positive impact**: Encourage, soothe, and accompany users with kindness, respect, and humanity.
 
 ---
 
-## 🛠️ Pile technologique
+## 🛠️ Tech Stack  
 
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Backend:** Next.js (Node.js), SQLite
-- **Model AI:** Local LLMs (Gemma via Ollama)
-- **Deploiement:** Docker, Vercel/Netlify (frontend), Render/Heroku (backend)
-
----
-
-## 🚀 Fonctionnalités
-
-- Discussion anonyme et encourageante avec un compagnon de santé mentale IA
-- Interface utilisateur moderne et apaisante axée sur le confort de l'utilisateur
-- Réponses motivationnelles, positives et empathiques
-- Suggestions d'articles, de méditation et de groupes de soutien
-- Historique de discussion persistant et prise en charge multi-chat
-- Inférence IA rapide et locale (aucune API cloud requise)
+- **Frontend:** React, TypeScript, Tailwind CSS  
+- **Backend:** Next.js (Node.js), SQLite  
+- **AI Model:** Local LLMs (Gemma via Ollama)  
+- **Deployment:** Docker, Vercel/Netlify (frontend), Render/Heroku (backend)  
 
 ---
 
-## 🖥️  Comment exécuter localement
+## 🚀 Features  
 
-### **Exigences**
-- Node.js (v18+ recommandé)
-- npm
-- [Ollama](https://ollama.com/) (for local LLMs)
-- Git
+- Anonymous and encouraging chat with an AI mental health companion  
+- Modern and calming user interface focused on user comfort  
+- Motivational, positive, and empathetic responses  
+- Suggestions for articles, meditation, and support groups  
+- Persistent chat history and multi-chat support  
+- Fast, local AI inference (no cloud API required)  
 
-### **Étapes de configuration**
+---
 
-1. **Cloner le dépôt:**
-   ```sh
-   git clone https://gitlab.com/beuguefallou/luna.git
-   cd luna
-   ```
+## 🖥️  How to Run Locally  
 
-2. **Installer les dépendances:**
-   ```sh
-   # Install backend dependencies
-   cd backend
+### **Requirements**  
+- Node.js (v18+ recommended)  
+- npm  
+- [Ollama](https://ollama.com/) (for local LLMs)  
+- Git  
+
+### **Setup Steps**  
+
+1. **Clone the repository:**  
+   ```sh  
+   git clone https://gitlab.com/beuguefallou/luna.git  
+   cd luna  
+   ```  
+
+2. **Install dependencies:**  
+   ```sh  
+   # Install backend dependencies  
+   cd backend  
    npm install
-   
-   # Install frontend dependencies
-   cd ../frontend
-   npm install
-   ```
+   # Install frontend dependencies  
+   cd ../frontend  
+   npm install  
+   ```  
 
-3. **Configurer Ollama:**
-   ```sh
-   # Install Ollama from https://ollama.com/
-   # Pull the Gemma model
-   ollama pull gemma3
-   ```
+3. **Configure Ollama:**  
+   ```sh  
+   ollama pull gemma3  
+   ```  
 
-4. **Initialiser la base de données:**
-   ```sh
-   cd backend
-   npm run build
-   ```
+4. **Initialize the database:**  
+   ```sh  
+   cd backend  
+   npm run build  
+   ```  
 
-### **Exécution de l'application**
+### **Run the Application**  
 
-1. **Démarrer Ollama (Port : 11434)**
-   ```sh
-   ollama serve
-   ```
-   - Cela démarrera le serveur Ollama à http://localhost:11434
-   - Gardez cette fenêtre de terminal ouverte
+1. **Start Ollama (Port: 11434)**  
+   ```sh  
+   ollama serve  
+   ```  
 
-2. **Démarrer le backend (Port : 3001)**
-   ```sh
-   cd backend
-    npm run dev
-   ```
-   or
-   ```bash
-         cd backend
-         npm run dev
-   ```
-         or
-   ```cmd
-         cd backend
-         npm run dev
+2. **Start the backend (Port: 3001)**  
+   ```sh  
+   cd backend  
+   npm run dev  
+   ```  
 
-   ```
+3. **Start the frontend (Port: 3000)**  
+   ```sh  
+   cd frontend  
+   npm start  
+   ```  
 
+# Other Methods  
+## Option 1: Use Windows Terminal  
+```bash  
+start wt -w 0 new-tab -d . bash -c "your_command; exec bash"  
+```  
 
-   - Cela démarrera l'application React à http://localhost:3001
-   - Gardez cette fenêtre de terminal ouverte
+## Option 2: Use cmd or PowerShell  
+**CMD:**  
+```bash  
+start cmd /k "your_command"  
+```  
+**PowerShell:**  
+```bash  
+start powershell -NoExit -Command "your_command"  
+```  
 
-3. **Démarrer le frontend (Port : 3000)**
-   ```sh
-   cd frontend
-   npm start
-   ```
-   - Cela démarrera l'application React à http://localhost:3000
-   - L'application s'ouvrira automatiquement dans votre navigateur par défaut
+## Option 3: Install gnome-terminal  
+```bash  
+sudo apt update  
+sudo apt install gnome-terminal  
+```  
 
-# Autres Méthodes
-## Option 1 : Utiliser Windows Terminal
-Sur Windows, tu peux utiliser Windows Terminal (si tu ne l'as pas encore installé, tu peux le télécharger sur le Microsoft Store).
-
-Pour utiliser Windows Terminal dans ton script, tu peux essayer quelque chose comme ceci dans run.sh :
-
-```bash
-start wt -w 0 new-tab -d . bash -c "votre_commande; exec bash"
-```
-wt est l'exécutable de Windows Terminal.
-
-- ``-w 0`` spécifie que tu veux ouvrir le terminal dans la fenêtre par défaut.
-
-new-tab ouvre un nouvel onglet dans Windows Terminal.
-
-- ``-d .`` spécifie le répertoire de travail (le répertoire courant dans ce cas).
-
-- ``bash -c "votre_commande; exec bash"`` exécute une commande et garde la fenêtre ouverte.
-
-## Option 2 : Utiliser cmd ou PowerShell
-Si tu ne veux pas utiliser Windows Terminal, tu peux utiliser cmd ou PowerShell pour ouvrir des nouvelles fenêtres de terminal. Exemple :
-
-CMD :
-
-```bash
-start cmd /k "votre_commande"
-```
-PowerShell :
-
-```bash
-
-start powershell -NoExit -Command "votre_commande"
-```
-Cela ouvrira une nouvelle fenêtre de terminal et exécutera la commande spécifiée.
-## 🔧 Option 3 : Installer gnome-terminal
-Si vous utilisez un système basé sur GNOME (comme Ubuntu), vous pouvez simplement l’installer avec :
-
-```bash
-sudo apt update
-sudo apt install gnome-terminal
-```
-
-
-## ✅ 1. Solution universelle (Windows + PowerShell) avec un .ps1
-Tu peux créer un script PowerShell (run.ps1) comme ceci :
-```
-powershell
-
-# run.ps1
-
-# Lancement de l'installation dans PowerShell
+## ✅ Universal PowerShell Script (.ps1)
+```powershell
 Start-Process powershell -ArgumentList "cd backend; npm install" -NoNewWindow
 Start-Process powershell -ArgumentList "cd frontend; npm install" -NoNewWindow
-
-# Lancement du téléchargement du modèle Gemma
 Start-Process powershell -ArgumentList "ollama pull gemma3"
-
-# Compilation backend
 Start-Process powershell -ArgumentList "cd backend; npm run build"
-
-# Démarrage de Ollama (Port : 11434)
 Start-Process powershell -ArgumentList "ollama serve"
-
-# Démarrage du backend (Port : 3001)
 Start-Process powershell -ArgumentList "cd backend; $env:PORT=3001; npm run dev"
-
-# Démarrage du frontend (Port : 3000)
 Start-Process powershell -ArgumentList "cd frontend; npm start"
 ```
-> ⚠️ Pour exécuter ce fichier :
-Ouvre PowerShell en mode administrateur et exécute :
-```
-powershell
 
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-./run.ps1
-```
-## ✅ 2. Solution CMD / .bat pour Windows uniquement
-Crée un fichier run.bat :
-```
-bat
-
+## ✅ CMD Script (.bat)
+```bat
 @echo off
-
 start "Install backend dependencies" cmd /k "cd backend && npm install"
 start "Install frontend dependencies" cmd /k "cd frontend && npm install"
 start "Pull gemma model" cmd /k "ollama pull gemma3"
@@ -209,104 +137,65 @@ start "Build backend" cmd /k "cd backend && npm run build"
 start "Start ollama" cmd /k "ollama serve"
 start "Start backend" cmd /k "cd backend && set PORT=3001 && npm run dev"
 start "Start frontend" cmd /k "cd frontend && npm start"
-Double-clique sur le fichier pour tout lancer dans des fenêtres de terminal séparées.
 ```
 
-## ✅ 3. Script Bash (Linux/macOS ou Git Bash sur Windows)
-Crée un fichier run.sh :
-```
-bash
-
+## ✅ Bash Script (run.sh)
+```bash
 #!/bin/bash
-
-# Install backend deps
 gnome-terminal -- bash -c "cd backend && npm install; exec bash"
-# Install frontend deps
 gnome-terminal -- bash -c "cd frontend && npm install; exec bash"
-
-# Pull gemma model
 gnome-terminal -- bash -c "ollama pull gemma3; exec bash"
-
-# Build backend
 gnome-terminal -- bash -c "cd backend && npm run build; exec bash"
-
-# Start ollama
 gnome-terminal -- bash -c "ollama serve; exec bash"
-
-# Start backend
 gnome-terminal -- bash -c "cd backend && PORT=3001 npm run dev; exec bash"
-
-# Start frontend
 gnome-terminal -- bash -c "cd frontend && npm start; exec bash"
-Si tu es sous WSL ou Ubuntu, installe gnome-terminal ou adapte avec xterm, konsole, etc.
 ```
-> 🧠 Recommandation
-- Si tu es sous Windows uniquement, utilise le .bat ou .ps1
 
-- Si tu es sur Git Bash ou WSL, préfère le run.sh
+### **Port Configuration**  
+- Frontend: http://localhost:3000  
+- Backend: http://localhost:3001  
+- Ollama: http://localhost:11434  
 
-
-
-### **Configuration du port**
-- Frontend: http://localhost:3000
-- Backend: http://localhost:3001
-- Ollama: http://localhost:11434
-
-### **Dépannage**
-Si vous rencontrez des conflits de ports :
-1. Vérifiez si un processus utilise le port 3000 :
-
-   ```sh
-   netstat -ano | findstr :3000
-   ```
-2. Tuez le processus si nécessaire :
-   ```sh
-   taskkill /F /PID <process_id>
-   ```
-
- Ollama affiche  "port déjà utilisé ":
-1. Vérifiez si Ollama est déjà en cours d'exécution
-2. Tuer tous les processus Ollama existants
-3. Redémarrer Ollama
+### **Troubleshooting**  
+```sh  
+netstat -ano | findstr :3000  
+taskkill /F /PID <process_id>  
+```
 
 ---
 
-## 📝 Améliorations futures
+## 📝 Future Improvements  
 
-- Historique de discussion persistant et prise en charge multi-chat
-- Des suggestions et des ressources plus personnalisées
-- Interface utilisateur adaptée aux mobiles
-- Options de déploiement dans le cloud
-
-
----
-
-## 🤝 Contributions
-Les pull requests et suggestions sont les bienvenues ! N'hésitez pas à ouvrir une issue pour discuter de vos idées.
+- Persistent chat history and multi-chat support  
+- More personalized suggestions and resources  
+- Mobile-friendly user interface  
+- Cloud deployment options  
 
 ---
 
-## 📄 License
+## 🤝 Contributions  
+Pull requests and suggestions are welcome! Feel free to open an issue to discuss your ideas.
 
+---
+
+## 📄 License  
 MIT
 
 ---
 
-## 🙏 Remerciements
-
-- [Ollama](https://ollama.com/)
-- [Gemma LLM](https://ai.google.dev/gemma)
-- [React](https://react.dev/)
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+## 🙏 Acknowledgments  
+- [Ollama](https://ollama.com/)  
+- [Gemma LLM](https://ai.google.dev/gemma)  
+- [React](https://react.dev/)  
+- [Next.js](https://nextjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
 
 ---
-## Quelques fonctionnalités de l'application:-
 
+## Some app features:
 
-Page d'accueil                 |                   Reponse ChatBot
-:---------------------------------:        |      :------------------------------:
-<img src="Screenshots/Capture1.PNG" height="200">  | <img src="Screenshots/Capture.PNG" height="200">
+Homepage | ChatBot Response  
+:--:|:--:  
+<img src="Screenshots/Capture1.PNG" height="200"> | <img src="Screenshots/Capture.PNG" height="200">
 
-
-> "Si vous ou quelqu'un que vous connaissez éprouvez des difficultés, veuillez contacter un professionnel de la santé mentale ou une ligne d'écoute de votre pays. LUNA. ne remplace pas une aide professionnelle.
+> "If you or someone you know is struggling, please reach out to a mental health professional or a helpline in your country. LUNA is not a replacement for professional help."

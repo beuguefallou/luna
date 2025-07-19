@@ -78,12 +78,12 @@ const ChatArea = ({ messages, onSend, input, setInput, suggestions, onSuggestion
             LUNA
           </h1>
           <div className="flex flex-col items-center sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <span className="text-xs sm:text-sm text-gray-600 text-center">Developed with ❤️ by <span className="font-bold">Rohan Vanmali</span></span>
+            <span className="text-xs sm:text-sm text-gray-600 text-center">Developed with ❤️ by <span className="font-bold">Mouhama Fadilou Diop</span></span>
             <div className="flex gap-2">
-              <a href="https://www.linkedin.com/in/vanmalirohan20/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-calmBlue transition">
+              <a href="https:/https://www.linkedin.com/in/mouhamadou-fadilou-diop-76899a161/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-calmBlue transition">
                 <FaLinkedin size={16} className="sm:w-5 sm:h-5" />
               </a>
-              <a href="https://github.com/rohanvan19" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-calmPurple transition">
+              <a href="https://github.com/beuguefallou" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-calmPurple transition">
                 <FaGithub size={16} className="sm:w-5 sm:h-5" />
               </a>
             </div>
